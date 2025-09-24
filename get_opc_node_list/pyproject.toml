@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "hatch-datavolo-nar"]
+build-backend = "hatchling.build"
+
+[project]
+name = "get-opc-node-list-processor"
+dynamic = ["version"]
+description = "OPC UA Node List Discovery Processor for Apache NiFi"
+authors = [{ name = "Rahul Reddy" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "opcua>=0.98.13",
+    "cryptography>=3.4.8"
+]
+
+[tool.hatch.version]
+path = "src/processors/__about__.py"
+
+[tool.hatch.build.targets.nar]
+packages = ["src/processors"]
+
+# Include processor in NAR
+[tool.hatch.build.targets.nar.force-include]
+"src/processors/get_opc_node_list.py" = "get_opc_node_list.py"
