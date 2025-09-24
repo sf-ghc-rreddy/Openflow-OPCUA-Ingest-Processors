@@ -1,1 +1,1 @@
-# GetOPCNodeList Processor Package
+# GetOPCData Processor Package
