@@ -141,3 +141,26 @@ ns=2;s=Temperature1,Temperature Sensor 1,23.7,Double,2024-12-15T10:30:14.123Z,Go
 ns=2;s=Pressure1,Pressure Sensor 1,1.25,Double,2024-12-15T10:30:14.125Z,Good,Success
 ```
 
+# Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make changes and add tests
+4. Ensure all processors build successfully
+5. Submit a pull request with detailed description
+
+
+## Support
+
+For issues and questions:
+1. Open an issue with detailed error information and configuration
+
+---
+
+## Changelog
+
+### Version 1.0.0
+- Initial release with two core components
+- Support for current value reading
+- Multiple output formats (JSON, CSV, XML)  
+- Comprehensive error handling
